@@ -1,5 +1,5 @@
 # GoBuildDocsifySidebar
-> go实现的 docsify生成sidebar
+> 使用golang 生成 docsify 的sidebar
 
 
 > [点我查看 c#版本源码](https://github.com/xxxxue/Docsify-Build-Sidebar)
