@@ -1,9 +1,9 @@
 package main
 
 import (
+	"GoBuildDocsifySidebar/utils"
 	"encoding/json"
 	"fmt"
-	"GoBuildDocsifySidebar/utils"
 	"io/ioutil"
 	"path"
 	"strings"
@@ -16,7 +16,7 @@ type Config struct {
 var (
 	_config           *Config
 	_homePath         string
-	_jsonConfigPath   = "./Config/Config.json"
+	_jsonConfigPath   = "./config/config.json"
 	_sidebarFileName  = "_sidebar.md"
 	_readmeFileName   = "README.md"
 	_ignoreDirList    = []string{".git"}
@@ -25,8 +25,6 @@ var (
 	_includeDirList   = []string{}
 	_level            = 0
 )
-
-
 
 func Entry(rootPath string, isHome bool) string {
 	var sidebarData = ""
@@ -152,7 +150,6 @@ func InitConfig() {
 	//println(fmt.Sprintf("%+v", _config))
 }
 
-
 func Run() {
 	Try(func() {
 		InitConfig()
@@ -175,7 +172,6 @@ func Try(fun func(), handler func(interface{})) {
 	}()
 	fun()
 }
-
 
 func main() {
 	Run()
