@@ -1,15 +1,16 @@
 # GoBuildDocsifySidebar
 > 使用golang 生成 docsify 的sidebar
 
+# 仅供学习
+日常使用请选择👉 [C# 版本源码](https://github.com/xxxxue/Docsify-Build-Sidebar)
 
-> [点我查看 c#版本源码](https://github.com/xxxxue/Docsify-Build-Sidebar)
+## ~~使用方法~~
+> ~~使用前先将 `/config/config.json` 中的 `HomePath` 
+> 改为本机docsify项目的根目录~~
 
-## 使用方法
-> 使用前先将 `/config/config.json` 中的 `HomePath` 
-> 改为本机docsify项目的根目录
+~~1. 自己用go源码编译~~
 
-1. 自己用go源码编译
-2. 在 `Releases` 中 下载相应系统的文件
+~~2. 在 `Releases` 中 下载相应系统的文件~~
 
 
 ## 编译
